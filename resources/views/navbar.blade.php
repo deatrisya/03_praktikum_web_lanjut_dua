@@ -11,10 +11,11 @@
           </div>
           <nav class="tm-nav">
             <ul>
-              <li><a href="home" id="link-home">Home</a></li>
-              <li><a href="today" id="link-today">Today Special</a></li>
-              <li><a href="menu" id="link-menu">Menu</a></li>
-              <li><a href="contact" id="link-contact">Contact</a></li>
+              <li><a href="{{route('home')}}" id="link-home">Home</a></li>
+              <li><a href="{{route('today')}}" id="link-today">Today Special</a></li>
+              <li><a href="{{route('menu')}}" id="link-menu">Menu</a></li>
+              <li><a href="{{route('contact')}}" id="link-contact">Contact</a></li>
+              <li><a href="{{route('foodmenu')}}" id="link-foodmenu">Food Menu</a></li>
             </ul>
           </nav>
         </div>
