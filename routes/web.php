@@ -13,13 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\contactController;
-use App\Http\Controllers\homeController;
-use App\Http\Controllers\todaySpecialController;
-use App\Http\Controllers\menuController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TodaySpecialController;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\FoodMenuController;
 
-Route::get('/',[homeController::class,'home']);
-Route::get('today',[todaySpecialController::class,'today']);
-Route::get('menu',[menuController::class,'menu']);
-Route::get('contact',[contactController::class,'contact']);
+Route::get('/', [HomeController::class, 'home'])->name('home');
+Route::get('today',[TodaySpecialController::class,'today'])->name('today');
+Route::get('menu',[MenuController::class,'menu'])->name('menu');
+Route::get('contact',[ContactController::class,'contact'])->name('contact');
+Route::get('foodmenu',[FoodMenuController::class,'foodMenu'])->name('foodmenu');
 
