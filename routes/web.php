@@ -14,19 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\contactController;
+use App\Http\Controllers\homeController;
+use App\Http\Controllers\todaySpecialController;
+use App\Http\Controllers\menuController;
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');
+Route::get('/',[homeController::class,'home']);
+Route::get('today',[todaySpecialController::class,'today']);
+Route::get('menu',[menuController::class,'menu']);
+Route::get('contact',[contactController::class,'contact']);
 
-Route::prefix('product')->group(function () {
-    Route::get('today-special', function () {
-        return view('today');
-    })->name('today');
-});
-
-Route::get('menu', function () {
-    return view('menu');
-})->name('menu');
-
-Route::resource('contact', contactController::class);
