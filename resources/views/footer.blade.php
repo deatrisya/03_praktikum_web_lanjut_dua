@@ -6,7 +6,7 @@
               <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
                 <h3 class="tm-footer-div-title">Main Menu</h3>
                 <ul>
-                  <li><a href="{{route('index')}}">Home</a></li>
+                  <li><a href="#">Home</a></li>
                   <li><a href="#">About Us</a></li>
                   <li><a href="#">Directory</a></li>
                   <li><a href="#">Blog</a></li>
